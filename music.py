@@ -73,7 +73,7 @@ async def play(ctx, *, track: str):
         
     else:
         await vc.play(song)
-        await ctx.send(embed=Functions.playnow(ctx, song))
+        await ctx.send(embed=Embeds.playnow(ctx, song))
         
 @bot.command(hidden=True)
 async def queue(ctx):
