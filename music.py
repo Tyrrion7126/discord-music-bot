@@ -19,7 +19,7 @@ bot = Bot()
 
 async def setup_node():
     await bot.wait_until_ready()
-    node: wavelink.Node = wavelink.Node(uri="54.38.198.24:88", password="stonemusicgay")
+    node: wavelink.Node = wavelink.Node(uri="", password="")
     await wavelink.NodePool.connect(client=bot, nodes=[node])
 
 @bot.event
